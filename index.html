@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Махалля Будущего</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <h1>Махалля Будущего</h1>
+      <p>
+        Современное пространство для жизни, технологий и комфорта. Забронируйте
+        своё место уже сегодня и станьте частью нового поколения жилых
+        кварталов.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <div class="form-container">
+        <h2>Забронировать место</h2>
+        <form id="bookingForm">
+          <input type="text" placeholder="ФИО" required />
+          <input type="tel" placeholder="Телефон" required />
+          <input type="email" placeholder="Электронная почта" required />
+          <button type="submit">Забронировать</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="success" id="successScreen">
+      <div class="emoji">😊</div>
+      <h1>Поздравляем! Вы успешно забронировали место!</h1>
+    </div>
+
+    <canvas id="fireworks"></canvas>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
