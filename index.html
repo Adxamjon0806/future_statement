@@ -5,182 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Maxalla 7.0 — Махалля Будущего</title>
 
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="AI Maxalla 7.0 — первый проект умной махалли нового поколения в Узбекистане. Искусственный интеллект, умная инфраструктура и экологичные решения. Реализация в 2030 году."
+    />
+    <meta
+      name="keywords"
+      content="AI Maxalla, махалля будущего, умный город, Узбекистан, 2030, умная махалля, искусственный интеллект, недвижимость будущего"
+    />
+    <meta name="author" content="AI Maxalla 7.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://aimaxalla.uz/" />
+
+    <!-- Open Graph (для соцсетей) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Maxalla 7.0 — Махалля Будущего" />
+    <meta
+      property="og:description"
+      content="Первый проект умной махалли нового поколения в Узбекистане. Будущее не ждут — его создают. Реализация в 2030 году."
+    />
+    <meta property="og:url" content="https://aimaxalla.uz/" />
+    <meta
+      property="og:image"
+      content="https://aimaxalla.uz/futureMakhalla.webp"
+    />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="AI Maxalla 7.0" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Maxalla 7.0 — Махалля Будущего" />
+    <meta
+      name="twitter:description"
+      content="Первый проект умной махалли нового поколения в Узбекистане. Реализация в 2030 году."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aimaxalla.uz/futureMakhalla.webp"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <style>
-      /* ===== ФИНАЛЬНЫЙ БЛОК 7 ===== */
-      .final-cta {
-        background: linear-gradient(
-          135deg,
-          #0b1220 0%,
-          #0f2040 50%,
-          #0b1220 100%
-        );
-        padding: 120px 20px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .final-cta::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          radial-gradient(
-            ellipse 60% 40% at 50% 0%,
-            rgba(56, 189, 248, 0.12) 0%,
-            transparent 70%
-          ),
-          radial-gradient(
-            ellipse 40% 30% at 80% 100%,
-            rgba(59, 130, 246, 0.08) 0%,
-            transparent 60%
-          );
-        pointer-events: none;
-      }
-
-      .final-cta-inner {
-        position: relative;
-        z-index: 2;
-        max-width: 700px;
-        margin: auto;
-      }
-
-      .final-cta-badge {
-        display: inline-block;
-        background: rgba(56, 189, 248, 0.12);
-        border: 1px solid rgba(56, 189, 248, 0.3);
-        color: #38bdf8;
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 6px 18px;
-        border-radius: 30px;
-        margin-bottom: 30px;
-      }
-
-      .final-cta h2 {
-        font-size: clamp(30px, 5vw, 52px);
-        font-weight: 800;
-        line-height: 1.15;
-        margin-bottom: 20px;
-        background: linear-gradient(135deg, #ffffff 40%, #38bdf8 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .final-cta p {
-        font-size: clamp(16px, 2.5vw, 19px);
-        color: rgba(255, 255, 255, 0.65);
-        line-height: 1.7;
-        margin-bottom: 12px;
-      }
-
-      .final-cta p strong {
-        color: #fff;
-        font-weight: 700;
-      }
-
-      .final-cta-buttons {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
-      }
-
-      .final-cta-buttons a {
-        padding: 16px 40px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 16px;
-        transition: 0.3s;
-        display: inline-block;
-      }
-
-      .btn-cta-primary {
-        background: linear-gradient(90deg, #0ea5e9, #3b82f6);
-        color: white;
-        box-shadow: 0 0 30px rgba(14, 165, 233, 0.35);
-      }
-
-      .btn-cta-primary:hover {
-        transform: scale(1.06);
-        box-shadow: 0 0 45px rgba(14, 165, 233, 0.55);
-      }
-
-      .btn-cta-secondary {
-        border: 2px solid rgba(56, 189, 248, 0.5);
-        color: #38bdf8;
-        backdrop-filter: blur(10px);
-        background: rgba(56, 189, 248, 0.05);
-      }
-
-      .btn-cta-secondary:hover {
-        transform: scale(1.06);
-        border-color: #38bdf8;
-        background: rgba(56, 189, 248, 0.12);
-      }
-
-      /* Divider перед формой */
-      .section-divider {
-        width: 60px;
-        height: 3px;
-        background: linear-gradient(90deg, #0ea5e9, #3b82f6);
-        border-radius: 2px;
-        margin: 60px auto 0;
-      }
-
-      /* Форма теперь внутри финального блока */
-      .final-form-wrap {
-        margin-top: 60px;
-        padding: 40px;
-        background: rgba(255, 255, 255, 0.04);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 24px;
-        backdrop-filter: blur(20px);
-        text-align: left;
-      }
-
-      .final-form-wrap h3 {
-        font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 8px;
-        color: #fff;
-      }
-
-      .final-form-wrap p {
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.5);
-        margin-bottom: 20px;
-        line-height: 1.5;
-      }
-
-      .final-form-wrap input {
-        margin: 10px 0;
-      }
-
-      .final-form-wrap button {
-        margin-top: 6px;
-      }
-
-      @media (max-width: 600px) {
-        .final-cta-buttons a {
-          width: 100%;
-          text-align: center;
-        }
-        .final-form-wrap {
-          padding: 24px 18px;
-        }
-      }
-    </style>
   </head>
   <body>
     <!-- ================= HERO ================= -->
